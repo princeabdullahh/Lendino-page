@@ -1,0 +1,495 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: "Lato", sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.7;
+}
+/*	Components	*/
+.btn-green {
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: 6px 10px;
+	background-color: #4f9702;
+	color: white;
+	border-radius: 5px;
+	transition: all 0.2 ease;
+	cursor: pointer;
+	transition: all 0.25s ease-out;
+}
+.btn-green:hover {
+	background-color: #386d00;
+}
+.btn-light-green {
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: 6px 10px;
+	background-color: #67c700;
+	color: white;
+	border-radius: 5px;
+	transition: all 0.2 ease;
+	cursor: pointer;
+	transition: all 0.25s ease-out;
+}
+.btn-light-green:hover {
+	background-color: #53a000;
+}
+
+.container {
+	width: 1140px;
+	margin: 0 auto;
+}
+.container::after {
+	content: "";
+	display: block;
+}
+.fixed-header {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background-color: #fff;
+	z-index: +1;
+	box-shadow: 0 2px 8px rgba(31, 31, 31, 0.6);
+}
+.header {
+	width: 100%;
+	float: left;
+}
+.header-elements {
+	padding: 8px;
+	float: left;
+}
+.header--logo {
+	width: 15%;
+}
+.header--logo p {
+	font-size: 25px;
+	font-family: "Lobster", cursive;
+	color: green;
+}
+.header--menus {
+	width: 50%;
+}
+.header--menus ul {
+	list-style: none;
+	margin-top: 7px;
+}
+.header--menus ul li {
+	display: inline-block;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.header--menus ul li a {
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 700;
+	color: black;
+	transition: all 0.1s ease-in;
+}
+.header--menus ul li a:hover {
+	color: #53960c;
+	border-bottom: 2.5px solid black;
+	height: 100%;
+}
+.header--sicons {
+	width: 35%;
+}
+.header--sicons ul {
+	list-style: none;
+	margin-top: 2px;
+}
+.header--sicons ul li {
+	display: inline-block;
+}
+.header--sicons ul a {
+	color: rgb(27, 27, 27);
+	padding: 2px 8px;
+}
+
+/*	Styling Social Icons	*/
+.fa-facebook {
+	color: #4267b2;
+	padding: 6px 8px;
+	transition: all 0.2s ease-out;
+	font-size: 24px;
+}
+.fa-facebook:hover {
+	background-color: #4267b2;
+	color: white;
+	transform: scale(1.11);
+}
+.fa-twitter {
+	color: #1da1f2;
+	padding: 6px 8px;
+	font-size: 24px;
+	transition: all 0.2s ease-out;
+}
+.fa-twitter:hover {
+	background-color: #1da1f2;
+	color: white;
+	transform: scale(1.11);
+}
+.fa-linkedin {
+	color: #0077b5;
+	padding: 6px 8px;
+	font-size: 24px;
+	transition: all 0.2s ease-out;
+}
+.fa-linkedin:hover {
+	background-color: #0077b5;
+	box-shadow: 0px 1px 8px;
+	color: white;
+	transform: scale(1.11);
+}
+.fa-google-plus {
+	color: #dd5144;
+	padding: 6px 8px;
+	font-size: 24px;
+	transition: all 0.2s ease-out;
+}
+.fa-google-plus:hover {
+	background-color: #dd5144;
+	box-shadow: 0px 1px 8px;
+	color: white;
+	transform: scale(1.01);
+}
+.fa-sign-out:hover {
+	color: #73cf11;
+}
+
+/*		Leave a Message	*/
+.leave-msg {
+	position: fixed;
+	bottom: 15vh;
+	right: 0;
+	background-color: rgba(19, 19, 19, 0.8);
+	padding: 2px 4px;
+	border-radius: 5px 0px 0px 5px;
+	font-family: "Lato";
+	font-size: 14px;
+	font-weight: normal;
+	color: white;
+	text-transform: capitalize;
+	cursor: pointer;
+	transition: all 0.25s ease-out;
+}
+.leave-msg:hover {
+	color: #000;
+	background-color: #fff;
+	box-shadow: 0px 1px 3px;
+	font-weight: 700;
+}
+.fa-envelope {
+	margin-right: 3px;
+	margin-left: 3px;
+}
+
+/*  image container section  */
+.img-container {
+	background: url("../img/bg-05.jpg");
+	background-size: cover;
+	background-position: top center;
+	width: 100%;
+	float: left;
+	padding: 70px 0;
+	height: 540px;
+}
+.take-action {
+	background-color: rgba(224, 224, 224, 0.55);
+	height: 100%;
+	margin-left: 200px;
+	width: 500px;
+	position: relative;
+	padding: 20px;
+	border-radius: 10px;
+}
+/*	Styling the action box	*/
+.cont-box {
+	width: 100%;
+	padding: 20px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	margin: auto 0;
+}
+.cont-box p {
+	margin-top: 25px;
+	font-family: inherit;
+	font-size: 18px;
+	color: black;
+	font-weight: bolder;
+}
+.cont-box p a {
+	text-transform: uppercase;
+	padding: 6px 10px;
+	background-color: green;
+	color: white;
+	border-radius: 5px;
+}
+.cont-box p a:not(:last-child) {
+	margin-right: 15px;
+}
+.heading-primary {
+	color: black;
+	text-transform: uppercase;
+	margin-top: -55px;
+	word-spacing: 10px;
+}
+.heading-primary-1 {
+	display: block;
+	font-size: 60px;
+	font-weight: 700;
+}
+.heading-primary-2 {
+	display: block;
+	font-size: 60px;
+	font-weight: 700;
+	line-height: 60%;
+}
+
+/*  Value Propostion */
+.row {
+	width: 100%;
+	float: left;
+	margin-top: 46px;
+	text-align: center;
+	display: block;
+}
+.proposition-col {
+	width: 23%;
+	padding: 0 1%;
+	display: inline-block;
+}
+.mar-bot-20 {
+	margin-bottom: 20px;
+}
+.mar-top-16 {
+	margin-top: 16px;
+}
+.p-col-1 {
+	margin: auto;
+}
+
+/*	Designing Icon Circle box	*/
+
+.proposition-col .icon-box-1 i {
+	border-radius: 50%;
+	padding: 18px;
+	background-color: #6879d4;
+	font-size: 36px;
+	margin-bottom: 22px;
+	color: white;
+	font-weight: lighter;
+}
+.proposition-col .icon-box-2 i {
+	border-radius: 50%;
+	padding: 18px 26px;
+	background-color: #009688;
+	font-size: 36px;
+	margin-bottom: 22px;
+	color: white;
+	font-weight: lighter;
+}
+.proposition-col .icon-box-3 i {
+	border-radius: 50%;
+	padding: 18px;
+	background-color: #4caf50;
+	font-size: 36px;
+	margin-bottom: 22px;
+	color: white;
+	font-weight: lighter;
+}
+.proposition-col .icon-box-4 i {
+	border-radius: 50%;
+	padding: 18px;
+	background-color: #97e268;
+	font-size: 36px;
+	margin-bottom: 22px;
+	color: white;
+	font-weight: lighter;
+}
+
+.p-col-2 {
+	margin: auto;
+}
+.p-col-3 {
+	margin: auto;
+}
+.p-col-4 {
+	margin: auto;
+}
+
+/*   This css is about "Investing"   */
+.col-invest {
+	width: 40%;
+	padding: 4.5%;
+	display: inline-block;
+}
+.bg-grey {
+	background-color: #b7ccd3;
+}
+.col-invest h2 {
+	width: 100%;
+	float: left;
+	color: black;
+	margin-bottom: 10px;
+	font-family: "Lato";
+	font-weight: 700;
+}
+.col-invest:not(:last-child) {
+	margin-right: 70px;
+}
+.col-invest ul {
+	width: 100%;
+	float: left;
+	list-style: none;
+	padding: none;
+}
+.col-invest li {
+	padding-left: 18px;
+	text-align: left;
+}
+.col-invest li::before {
+	content: "\f058";
+	font-family: FontAwesome;
+	display: inline-block;
+	margin-left: -18px;
+	color: green;
+	width: 22px;
+}
+.invest-btn {
+	display: inline-block;
+	margin-top: 25px;
+	float: left;
+}
+/*	Styling the list	*/
+
+.col-invest-1 {
+}
+.col-invest-2 {
+}
+
+/*  Blog    */
+.blog {
+	text-align: center;
+	color: #000;
+	font-size: 40px;
+	width: 100%;
+	display: inline-block;
+	font-weight: 400;
+}
+
+.blog-post {
+	background-color: #fff;
+	padding: 0;
+}
+.blog-post h2 {
+	color: blue;
+	text-align: left;
+}
+.blog-post p {
+	text-align: left;
+}
+.blog-links .row {
+	margin-top: 20px;
+}
+
+/*	Designing Records*/
+.record {
+	width: 100%;
+	float: left;
+	background-color: #dcdcdc;
+	padding: 26px;
+	margin-top: 28px;
+}
+.record ul {
+	list-style: none;
+}
+.record ul li {
+	text-align: center;
+	padding: 3px;
+	font-size: 18px;
+	font-weight: 700;
+}
+
+/*	Trust Score	 */
+.trust-score {
+	width: 100%;
+	float: left;
+	background-color: white;
+	padding: 26px;
+}
+.trust-score ul {
+	list-style: none;
+}
+.trust-score ul li {
+	text-align: center;
+	padding: 3px;
+	font-size: 18px;
+	font-weight: 400;
+}
+.trust-score ul li i {
+	font-size: 28px;
+	padding: 3.5px 3px;
+	background-color: #73cf11;
+	color: white;
+}
+.trust-score ul li i:last-child {
+	background-color: #9e9e9e;
+}
+
+/*	Mention	  */
+.mention {
+	width: 100%;
+	float: left;
+	background-color: #808080;
+	text-align: center;
+}
+.mention h2 {
+	color: white;
+	font-family: "Lato";
+	text-align: center;
+	font-size: 45px;
+	font-weight: bolder;
+	margin: 18px auto;
+}
+.mention p {
+	display: inline-block;
+	margin-bottom: 36px;
+}
+.mention p img {
+	height: 60px;
+}
+.mention p img:not(:last-child) {
+	margin-right: 32px;
+}
+
+/*	Footer Design	*/
+footer {
+	background-color: #052d3a;
+	width: 100%;
+	float: left;
+	padding: 36px auto;
+}
+footer p {
+	font-weight: lighter;
+	font-family: "Lato";
+	line-height: 120%;
+}
+.footer-box {
+	color: white;
+	width: 100%;
+	display: inline-block;
+}
+footer .col-invest {
+	padding: 1%;
+}
+footer .row {
+	margin-top: 0;
+}
